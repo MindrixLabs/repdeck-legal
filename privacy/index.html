@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RepDeck — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for RepDeck by Mindrix Labs." />
+  <meta property="og:title" content="RepDeck — Privacy Policy" />
+  <meta property="og:description" content="How RepDeck handles your data and permissions." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#4F7DF3" />
+  <style>
+    :root {
+      --bg: #0e1116; --card:#151923; --text:#e7ecf3; --muted:#a8b0bf;
+      --border:#232a39; --accent:#4F7DF3; --accent-2:#365dd3; --max:820px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f7f9fc; --card:#ffffff; --text:#17202f; --muted:#5c677a; --border:#e6eaf2; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      max-width: var(--max); margin: 0 auto; padding: 14px 16px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .logo {
+      width: 28px; height: 28px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: inline-block;
+    }
+    .brand { font-weight: 700; letter-spacing: .2px; }
+    main { max-width: var(--max); margin: 28px auto 40px; padding: 0 16px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+    h1 { font-size: 28px; margin: 0 0 10px; }
+    h2 { font-size: 20px; margin: 24px 0 8px; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    .tag {
+      display: inline-block; padding: 2px 10px; border-radius: 999px;
+      background: color-mix(in srgb, var(--accent) 18%, transparent);
+      color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+      font-size: 12px; margin-left: 8px;
+    }
+    footer {
+      max-width: var(--max); margin: 20px auto 48px; padding: 0 16px;
+      color: var(--muted);
+    }
+    .hr { height: 1px; background: var(--border); margin: 22px 0; }
+    ul { margin: 8px 0 0 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <span class="logo" aria-hidden="true"></span>
+      <div class="brand">RepDeck</div>
+      <span class="tag">Privacy Policy</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <div class="muted">Last updated: 2025-08-14</div>
+      <div class="hr"></div>
+
+      <p>RepDeck by Mindrix Labs is a fitness planning app. We designed RepDeck to work without a user account or a backend. Your plans and preferences are stored locally on your device.</p>
+
+      <h2>Data We Process</h2>
+      <ul>
+        <li>Custom plans and exercises you create</li>
+        <li>App preferences (e.g., filters, settings, reminders)</li>
+      </ul>
+      <p>All data is stored locally on your device. Uninstalling the app removes this data.</p>
+
+      <h2>Permissions</h2>
+      <p>On Android 13+, RepDeck asks for the Notifications permission (POST_NOTIFICATIONS) to send reminders that you enable. If you deny permission, reminders are disabled.</p>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell or share your data with third parties.</p>
+
+      <h2>Security</h2>
+      <p>Because data is local to your device, please use device-level protections such as a passcode or biometrics. RepDeck does not transmit your data to our servers.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>RepDeck is not directed to children under 13. Do not use the app if you are under the minimum age required by your local laws without parental consent.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy over time. We will change the “Last updated” date when we do.</p>
+
+      <h2>Contact</h2>
+      <p>Email: SUPPORT_EMAIL</p>
+    </div>
+  </main>
+
+  <footer>
+    <div>© <span id="y"></span> Mindrix Labs. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
